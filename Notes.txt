@@ -52,3 +52,17 @@ for example:
 - https://www.npmjs.com/package/@testing-library/jest-dom
 $ npm i -D @testing-library/jest-dom@6.4.0
 
+
+Concepts:
+• What to test
+• Testing rendering
+• Testing user interactions
+• Working with component libs
+• Techniques to simplify tests
+• Catching issues with ESLint
+
+• What to test
+Test the behaviour(what the app does), not the implementation(how it's implemented)
+In react we expect to have more Integration tests > Unit tests > E2E tests
+Test the behaviour, not the styles.
+
