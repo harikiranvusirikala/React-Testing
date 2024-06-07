@@ -1,0 +1,29 @@
+Topics:
+===
+• Testing Components
+• Mocking APls
+• Testing Forms
+• Testing State Management
+• Testing Authentication
+• Testing Routing
+
+$ npx @eslint/migrate-config .eslintrc.cjs
+
+Start application (it will start backend in port 3000, frontend in port 5173)
+$ npm start
+
+Setting Up Vitest:
+$ npm i -D vitest
+
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+
+Install VS Code extension "Vitest Snippets" this helps in imports essentials function by just typing:
+iv - import vitest
+d - describe
+i - it
+e - expect
+
+$ npm t
+$ npm run test:ui
+
