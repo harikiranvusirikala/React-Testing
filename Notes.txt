@@ -27,3 +27,28 @@ e - expect
 $ npm t
 $ npm run test:ui
 
+To test react components we need few tools,
+1. the first is react testing library which allow us to render components and interact with them just like the end user.
+
+- https://www.npmjs.com/package/@testing-library/react
+$ npm i -D @testing-library/react@14.2.0
+
+2. By default our tests are run in node environment, but node dosen't know anything about browser APIs like the DOM,
+So to test our react components we need to run our tests within an environment that emulates a browser environment.
+• JSDOM
+• HappyDOM - faster, but lacks some APIs
+
+- https://www.npmjs.com/package/jsdom
+$ npm i -D jsdom@24.0.0
+
+Now update vitest.config.ts to tell tests to use jsdom for environment.
+$ npm run test:ui
+
+3. jest-dom library gives us bunch of matchers for writing assertions against the Dom.
+for example:
+• we can check to see if an element is in the Dom
+• if it has the right content and so on
+
+- https://www.npmjs.com/package/@testing-library/jest-dom
+$ npm i -D @testing-library/jest-dom@6.4.0
+
