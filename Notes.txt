@@ -60,6 +60,11 @@ Concepts:
 • Working with component libs
 • Techniques to simplify tests
 • Catching issues with ESLint
+• Mocking APIs
+• Testing forms
+• Testing state management
+• Testing authentication
+• Testing routing
 
 • What to test
 Test the behaviour(what the app does), not the implementation(how it's implemented)
