@@ -66,3 +66,18 @@ Test the behaviour(what the app does), not the implementation(how it's implement
 In react we expect to have more Integration tests > Unit tests > E2E tests
 Test the behaviour, not the styles.
 
+• Testing rendering
+As writing a jsx expression we need to rename the application to have .test.tsx extension.
+
+screen.debug()
+We can see the state of the Virtual DOM in Vitest UI Console section of the test.
+
+- https://testing-library.com/docs/queries/byrole
+screen.geByRole()
+
+- https://github.com/testing-library/jest-dom?tab=readme-ov-file#table-of-contents > Custom matchers
+Warning: toBeInTheDOM has been deprecated and will be removed in future updates.
+Please use toBeInTheDocument for searching the entire document and toContainElement for searching a specific container.
+
+If test is failing we can see the Report section in Vitest UI for the state of DOM and error.
+
