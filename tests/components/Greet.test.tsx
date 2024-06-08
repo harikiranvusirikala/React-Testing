@@ -5,6 +5,7 @@ describe('Greet', () => {
   it('should render Hello with the name when name is provided', () => {
     render(<Greet name="Hari" />)
 
+    screen.debug()
     const heading = screen.getByRole('heading')
     expect(heading).toBeInTheDocument()
     expect(heading).toHaveTextContent(/hari/i)

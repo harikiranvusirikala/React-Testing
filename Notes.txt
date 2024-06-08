@@ -91,3 +91,5 @@ import '@testing-library/jest-dom/vitest'
 Install VS Code extension "Testing Library Snippets" and for below line type "itr" and enter
 import { render, screen } from '@testing-library/react';
 
+.tbind will be enough which are first letter to have the .toBeInTheDocument
+
