@@ -109,6 +109,8 @@ Enter lorem100 to generate lorem text
 qt enter will generate screen.getByText()
 qr enter will generate screen.getByRole('id')
 
-.geByRole will throw error if it is not available.
+Simplifying Tests
+• Can have rendering of component and getting elements in a separate function.
+• .geByRole will throw error if it is not available.
 So no need of .toBeInTheDocument, but no other expects there then it's better to add .toBeInTheDocument
 
