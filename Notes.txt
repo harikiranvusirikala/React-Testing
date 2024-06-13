@@ -98,3 +98,9 @@ import { render, screen } from '@testing-library/react';
 
 .tbind will be enough which are first letter to have the .toBeInTheDocument
 
+
+User Interactions
+- https://testing-library.com/docs/user-event/intro
+
+npm i -D @testing-library/user-event
+
