@@ -104,3 +104,11 @@ User Interactions
 
 npm i -D @testing-library/user-event
 
+Enter lorem100 to generate lorem text
+
+qt enter will generate screen.getByText()
+qr enter will generate screen.getByRole('id')
+
+.geByRole will throw error if it is not available.
+So no need of .toBeInTheDocument, but no other expects there then it's better to add .toBeInTheDocument
+
