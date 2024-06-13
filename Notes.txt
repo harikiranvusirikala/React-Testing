@@ -114,3 +114,8 @@ Simplifying Tests
 • .geByRole will throw error if it is not available.
 So no need of .toBeInTheDocument, but no other expects there then it's better to add .toBeInTheDocument
 
+screen.getByPlaceholderText(/search/i)
+user.type(input, searchTerm + "{enter}")
+expect(onChange).toHaveBeenCalledWith(searchTerm)
+expect(onChange).not.toHaveBeenCalled()
+
